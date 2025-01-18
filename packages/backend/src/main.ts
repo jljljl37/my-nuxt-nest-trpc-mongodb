@@ -5,7 +5,6 @@ import { createExpressMiddleware } from '@trpc/server/adapters/express'
 import mongoose from 'mongoose';
 
 async function bootstrap() {
-  // await mongoose.connect('mongodb://test:testpassword@101.37.70.222:27017');
   await mongoose.connect('mongodb://localhost:27017/mmtest');
   if (mongoose.connection.readyState !== mongoose.ConnectionStates.connected) {
     console.error('MongoDB not connected');
