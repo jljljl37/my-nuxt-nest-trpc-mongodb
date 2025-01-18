@@ -1,0 +1,1 @@
+export { Test, TestZod } from "../../backend/src/trpc/mongodb/test";
